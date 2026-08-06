@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjithkumar K | Front-End Developer</title>
+    <meta name="description"
+        content="Ranjithkumar K — Front-End Developer with 5+ years of experience building high-performance, responsive web applications with React.js, JavaScript, and modern UI frameworks.">
+    <meta name="keywords"
+        content="Front-End Developer, React Developer, JavaScript, HTML, CSS, WordPress, Shopify, Portfolio">
+    <meta name="author" content="Ranjithkumar K">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ranjithkumar K | Front-End Developer">
+    <meta property="og:description"
+        content="Front-End Developer with 5+ years of experience crafting responsive, high-performance web applications.">
+    <meta property="og:type" content="website">
+
+    <!-- Internal Css -->
+    <link rel="stylesheet" href="contents/css/custom.css">
+    <!-- <link rel="stylesheet" href="contents/css/index.css"> -->
+    <link rel="stylesheet" href="contents/css/portfolio.css">
+
+    <!-- Uikit -->
+    <link rel="stylesheet" href="contents/plugins/uikit/uikit-min.css">
+    <!-- UIkit JS -->
+    <script src="contents/plugins/uikit/uikit-min.js"></script>
+    <script src="contents/plugins/uikit/uikit-icon-min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <div uk-sticky="cls-active: uk-navbar-sticky;">
+        <nav class="cs-nav uk-navbar-sticky" uk-scrollspy-nav="closest: li; scroll: true; offset: 120">
+            <div class="uk-container uk-container-large">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav cs-navbar-nav">
+                            <li>
+                                <a href="#banner" class="cs-logo-mark">Ranjith<span>Kumar.k</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-hidden@m">
+                            <a href="" uk-icon="icon: menu; ratio: 1.5" uk-toggle="target: #offcanvas-overlay"></a>
+                        </div>
+                        <ul class="uk-navbar-nav cs-navbar-nav uk-visible@m">
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
+                        </ul>
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="#contact" class="uk-button uk-button-primary cs-nav-cta">Let's Talk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-background-default">
+                    <button class="uk-offcanvas-close cs-text-secondary" type="button" uk-close></button>
+                    <div class="uk-margin-medium-top">
+                        <ul class="cs-mobile-nav">
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navbar Section End -->
+
+    <!-- Banner Section -->
+
+    <!-- <section id="banner" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="cs-hero-bg-shape"></div>
+        <div class="cs-hero-bg-shape cs-shape-2"></div>
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-3-5@m">
+                    <div class="reveal">
+                        <p class="uk-margin-remove cs-fw-500 cs-ban-name">
+                            <span class="cs-wave">👋</span> Hello! I'm Ranjithkumar K
+                        </p>
+                    </div>
+                    <div class="uk-margin-top reveal reveal-delay-1">
+                        <h1 class="uk-margin-remove cs-banner-title">Front-End Developer crafting
+                            <span class="cs-typed-role">pixel-perfect</span> web experiences.
+                        </h1>
+                    </div>
+                    <div class="uk-margin-top reveal reveal-delay-2">
+                        <p class="uk-margin-remove cs-ban-subtitle" style="max-width:560px;">
+                            5+ years of experience building high-performance, responsive web applications with
+                            React.js, JavaScript and modern UI frameworks — turning ideas into digital products that
+                            brands and users love.
+                        </p>
+                    </div>
+                    <div class="uk-margin-large-top reveal reveal-delay-3">
+                        <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <a href="#contact"><button class="uk-button uk-button-primary uk-button-small">Let's Talk!</button></a>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="#projects"><button class="uk-button uk-button-default">View My
+                                        Work</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <div class="cs-hero-photo-wrap reveal reveal-delay-2">
+                        <div class="cs-hero-chip"><span class="cs-dot"></span> Available for hire</div>
+                        <div class="cs-hero-photo-frame">
+                            <img src="./contents/images/image-1.jpg" alt="Ranjithkumar K - Front-End Developer">
+                        </div>
+                        <div class="cs-hero-badge">
+                            <span class="cs-badge-num">5+</span>
+                            <span class="cs-badge-label">Years of Front-End<br>Development Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-hero-scroll uk-visible@m">
+            <span>Scroll</span>
+            <span class="cs-scroll-line"></span>
+        </div>
+    </section> -->
+
+    <section id="banner" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container">
+            <div>
+                <p class="uk-margin-remove cs-fw-500 cs-ban-name">Hello! I'm Ranjithkumar</p>
+            </div>
+            <div class="uk-margin-top">
+                <h1 class="uk-margin-remove cs-banner-title">Creating impactful experiences on visual design</h1>
+            </div>
+            <div class="uk-margin-large-top">
+                <div class="uk-grid uk-grid-large" uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <div>
+                            <button class="uk-button uk-button-primary">Let's Talk!</button>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-text-left uk-text-center@m">
+                            <p class="uk-margin-remove cs-ban-subtitle">5+ years of experience building
+                                high-performance.</p>
+                        </div>
+                        <div>
+                            <p class="uk-margin-remove cs-ban-subtitle">responsive web applications with React.js,
+                                JavaScript, and modern UI technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section End -->
+
+    <!-- Stats Section -->
+
+    <section id="stats" class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
+                <div class="reveal">
+                    <div class="cs-stat-card">
+                        <div class="cs-stat-num"><span data-counter="5">0</span><span class="cs-stat-plus">+</span>
+                        </div>
+                        <p class="cs-stat-label">Years Experience</p>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-stat-card">
+                        <div class="cs-stat-num"><span data-counter="20">0</span><span class="cs-stat-plus">+</span>
+                        </div>
+                        <p class="cs-stat-label">Websites Delivered</p>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-stat-card">
+                        <div class="cs-stat-num"><span data-counter="15">0</span><span class="cs-stat-plus">+</span>
+                        </div>
+                        <p class="cs-stat-label">WordPress Builds</p>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-3">
+                    <div class="cs-stat-card">
+                        <div class="cs-stat-num"><span data-counter="3">0</span></div>
+                        <p class="cs-stat-label">Countries Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section End -->
+
+    <!-- About Section -->
+
+    <section id="about" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid uk-grid-large uk-flex-middle" uk-grid>
+                <div class="uk-width-2-5@m">
+                    <div class="cs-about-photo reveal">
+                        <img src="./contents/images/image-5.jpg" alt="About Ranjithkumar K">
+                    </div>
+                </div>
+                <div class="uk-width-3-5@m">
+                    <div class="reveal">
+                        <span class="cs-section-tag">About Me</span>
+                    </div>
+                    <div class="cs-mt-15 reveal reveal-delay-1">
+                        <h2 class="uk-margin-remove cs-sec-title">Turning ideas into intuitive digital experiences
+                        </h2>
+                    </div>
+                    <div class="cs-mt-15 reveal reveal-delay-2">
+                        <p class="cs-sec-desc">Results-driven Front-End Developer with 5+ years of experience building
+                            responsive, high-performance web applications using React.js, JavaScript, HTML5, and CSS.
+                            Skilled in WordPress, Shopify, BigCommerce, and converting Figma designs into pixel-perfect,
+                            user-friendly interfaces.</p>
+                    </div>
+                    <div class="cs-mt-30 reveal reveal-delay-3">
+                        <ul class="cs-about-list">
+                            <li><span class="cs-check" uk-icon="icon: check; ratio: .8"></span> Pixel-perfect,
+                                design-to-code implementation from Figma</li>
+                            <li><span class="cs-check" uk-icon="icon: check; ratio: .8"></span> Performance-first
+                                development with strong Core Web Vitals</li>
+                            <li><span class="cs-check" uk-icon="icon: check; ratio: .8"></span> Cross-browser,
+                                mobile-first, SEO-friendly builds</li>
+                            <li><span class="cs-check" uk-icon="icon: check; ratio: .8"></span> Mentoring &amp;
+                                code-review focused team collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="cs-mt-30 reveal reveal-delay-4">
+                        <div class="cs-about-info-grid">
+                            <div>
+                                <p>Email</p>
+                                <a style="color: #000;font-weight: 600;font-size: 15px;"
+                                    href="mailto:ranjithplus3344@gmail.com">ranjithplus3344@gmail.com</a>
+                            </div>
+                            <div>
+                                <p>Phone</p>
+                                <a style="color: #000;font-weight: 600;font-size: 15px;" href="tel:+91 9080955852">+91
+                                    90809 55852</a>
+                            </div>
+                            <div>
+                                <p>Location</p>
+                                <p>India</p>
+                            </div>
+                            <div>
+                                <p>Availability</p>
+                                <p>Open to opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section End -->
+
+    <!-- Skills Section -->
+
+    <section id="skills" class="uk-padding-large uk-padding-remove-horizontal cs-background-light">
+        <div class="uk-container uk-container-large">
+            <div class="uk-text-center reveal">
+                <span class="cs-section-tag">What I Work With</span>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <h2 class="uk-margin-remove cs-sec-title">Skills &amp; Technologies</h2>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <p class="cs-sec-desc uk-margin-auto">A well-rounded toolkit built over 5+ years of shipping
+                    production web applications and marketing sites.</p>
+            </div>
+
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-margin-large-top" uk-grid>
+                <div class="reveal">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: code; ratio: 1.4"></div>
+                        <h4>Languages</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">HTML5</span>
+                            <span class="cs-tag">CSS</span>
+                            <span class="cs-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: bolt; ratio: 1.4"></div>
+                        <h4>Frameworks &amp; Libraries</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">React.js</span>
+                            <span class="cs-tag">Bootstrap 5</span>
+                            <span class="cs-tag">Tailwind CSS</span>
+                            <span class="cs-tag">UIkit</span>
+                            <span class="cs-tag">Material UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: database; ratio: 1.4"></div>
+                        <h4>State Management</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">Context API</span>
+                            <span class="cs-tag">Redux Toolkit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: world; ratio: 1.4"></div>
+                        <h4>CMS &amp; E-Commerce</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">WordPress</span>
+                            <span class="cs-tag">Divi</span>
+                            <span class="cs-tag">Elementor</span>
+                            <span class="cs-tag">WPBakery</span>
+                            <span class="cs-tag">Webflow</span>
+                            <span class="cs-tag">Shopify</span>
+                            <span class="cs-tag">BigCommerce</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: paint-bucket; ratio: 1.4"></div>
+                        <h4>Design &amp; Tools</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">Figma</span>
+                            <span class="cs-tag">Responsive Design</span>
+                            <span class="cs-tag">Mobile-First Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-skill-card">
+                        <div class="cs-skill-icon" uk-icon="icon: git-branch; ratio: 1.4"></div>
+                        <h4>Version Control &amp; Performance</h4>
+                        <div class="cs-tag-group">
+                            <span class="cs-tag">GitHub</span>
+                            <span class="cs-tag">GitLab</span>
+                            <span class="cs-tag">Core Web Vitals</span>
+                            <span class="cs-tag">Lighthouse</span>
+                            <span class="cs-tag">SEO Optimization</span>
+                            <span class="cs-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section End -->
+
+    <!-- Experience Section -->
+
+    <section id="experience" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid uk-grid-large" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="reveal">
+                        <span class="cs-section-tag">Career Path</span>
+                    </div>
+                    <div class="cs-mt-15 reveal reveal-delay-1">
+                        <h2 class="uk-margin-remove cs-sec-title">Work Experience</h2>
+                    </div>
+                    <div class="cs-mt-15 reveal reveal-delay-2">
+                        <p class="cs-sec-desc">Five plus years building and shipping web experiences for clients
+                            across Australia, Singapore, and India.</p>
+                    </div>
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="cs-timeline">
+                        <div class="cs-timeline-item reveal">
+                            <div class="cs-timeline-dot"></div>
+                            <div class="cs-timeline-card">
+                                <h3 class="cs-timeline-role">Front-End Developer</h3>
+                                <div class="cs-timeline-meta">
+                                    <span uk-icon="icon: location; ratio: .8"> Well Codestudio Services Pvt Ltd,
+                                        Salem</span>
+                                    <span uk-icon="icon: calendar; ratio: .8">Dec 2020 — Present</span>
+                                </div>
+                                <ul class="cs-timeline-list">
+                                    <li>Developed 20+ responsive, pixel-perfect websites for clients across
+                                        Australia, Singapore, and India, delivering cross-browser compatible,
+                                        mobile-first, high-performance web experiences.</li>
+                                    <li>Built and maintained React.js applications including a multi-tenant photo
+                                        editing platform and a real estate portal, implementing responsive UI
+                                        components and improving page load times.</li>
+                                    <li>Delivered 15+ custom WordPress websites using Divi, Elementor, WPBakery and
+                                        Webflow, cutting average delivery time by 25% through reusable component
+                                        libraries.</li>
+                                    <li>Built Shopify storefronts with custom Liquid template modifications,
+                                        integrating payment gateways and third-party apps for seamless e-commerce
+                                        experiences.</li>
+                                    <li>Partnered with UI/UX designers in Figma to implement design systems, ensuring
+                                        pixel-perfect fidelity and brand consistency across every project.</li>
+                                    <li>Optimized Core Web Vitals (LCP, FID, CLS) across client sites, driving
+                                        measurable gains in search rankings and user engagement.</li>
+                                    <li>Integrated RESTful APIs for dynamic data rendering and real-time content
+                                        updates, and applied on-page SEO best practices that grew organic traffic.
+                                    </li>
+                                    <li>Mentored junior developers on HTML/CSS standards and Git workflows, and
+                                        maintained version-controlled codebases through peer code reviews.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section End -->
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="uk-padding-large uk-padding-remove-horizontal cs-background-light">
+        <div class="uk-container uk-container-large">
+            <div class="uk-text-center reveal">
+                <span class="cs-section-tag">Selected Work</span>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <h2 class="uk-margin-remove cs-sec-title">Featured Projects</h2>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <p class="cs-sec-desc uk-margin-auto">A mix of production applications, client websites, and personal
+                    builds that showcase how I turn designs into performant, real-world products.</p>
+            </div>
+
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-margin-large-top uk-grid" uk-grid>
+
+                <!-- Project 1 -->
+                <div class="reveal">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <!-- <span class="cs-project-featured-badge">Featured</span> -->
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-4.jpg" alt="Primeophoto project preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">React.js · SaaS Platform</p> -->
+                            <h3 class="cs-project-title">Primeophoto</h3>
+                            <p class="cs-project-desc">Multi-tenant photo editing platform enabling clients to upload
+                                images, select services, track dynamic pricing, and manage orders end-to-end.</p>
+                            <div class="cs-project-tags">
+                                <span>React.js</span><span>REST API</span><span>UI/UX</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-3.jpg" alt="ISpace Transform project preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">HTML · CSS · JavaScript · UIkit</p> -->
+                            <h3 class="cs-project-title">ISpace Transform</h3>
+                            <p class="cs-project-desc">Interior design showcase built from Figma designs, featuring
+                                modern layouts and parallax scrolling across homepage, login and UI modules.</p>
+                            <div class="cs-project-tags">
+                                <span>UIkit</span><span>Figma to Code</span><span>Parallax</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-5.jpg" alt="WordPress portfolio preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">WordPress · Divi · Elementor</p> -->
+                            <h3 class="cs-project-title">WordPress CMS Portfolio</h3>
+                            <p class="cs-project-desc">15+ live WordPress sites spanning legal, construction,
+                                education and renewable energy sectors, built with reusable component libraries.</p>
+                            <div class="cs-project-tags">
+                                <span>WordPress</span><span>Elementor</span><span>WPBakery</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="reveal">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-7.jpg" alt="Turf booking platform preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">React.js · Vite · Personal Project</p> -->
+                            <h3 class="cs-project-title">Turf Booking Platform</h3>
+                            <p class="cs-project-desc">A responsive turf booking web app with slot selection, booking
+                                management, and a clean, intuitive user interface.</p>
+                            <div class="cs-project-tags">
+                                <span>React.js</span><span>Vite</span><span>UI Design</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-9.jpg" alt="Yoga site preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">React.js · Vite · Personal Project</p> -->
+                            <h3 class="cs-project-title">Yoga Studio Site</h3>
+                            <p class="cs-project-desc">A modern yoga studio website showcasing class schedules,
+                                instructor profiles, and a mobile-first responsive layout.</p>
+                            <div class="cs-project-tags">
+                                <span>React.js</span><span>Vite</span><span>Responsive</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-project-card">
+                        <div class="cs-project-img">
+                            <a class="cs-project-overlay-link" href="#" uk-icon="icon: arrow-right; ratio: 1"></a>
+                            <img src="./contents/images/image-10.jpg" alt="Quotes app preview">
+                        </div>
+                        <div class="cs-project-body">
+                            <!-- <p class="cs-project-cat">React.js · Vite · Personal Project</p> -->
+                            <h3 class="cs-project-title">Quotes App</h3>
+                            <p class="cs-project-desc">An interactive quotes web application with dynamic quote
+                                generation, category filtering, and a clean, minimal UI.</p>
+                            <div class="cs-project-tags">
+                                <span>React.js</span><span>Vite</span><span>Minimal UI</span>
+                            </div>
+                            <a class="cs-project-link" href="#">View Details
+                                <span class="cs-arrow-img uk-flex uk-flex-middle uk-flex-center"><img
+                                        src="./contents/images/arrow.svg" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section End -->
+
+
+    <!-- Education Section -->
+
+    <section id="education" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-text-center reveal">
+                <span class="cs-section-tag">Academic Background</span>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <h2 class="uk-margin-remove cs-sec-title">Education</h2>
+            </div>
+
+            <div class="uk-child-width-1-3@m uk-grid-match uk-margin-large-top" uk-grid>
+                <div class="reveal">
+                    <div class="cs-edu-card">
+                        <div class="cs-edu-icon" uk-icon="icon: file-edit; ratio: 1.3"></div>
+                        <div>
+                            <h4 class="cs-edu-degree">B.Sc. Computer Science</h4>
+                            <p class="cs-edu-school">K.S. Rangasamy College of Arts &amp; Science, Tiruchengode</p>
+                            <div class="cs-edu-meta">
+                                <span>2020</span>
+                                <span>68.38%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <div class="cs-edu-card">
+                        <div class="cs-edu-icon" uk-icon="icon: file-edit; ratio: 1.3"></div>
+                        <div>
+                            <h4 class="cs-edu-degree">Higher Secondary Certificate (HSC)</h4>
+                            <p class="cs-edu-school">Government Boys Higher Secondary School, Jalakandapuram</p>
+                            <div class="cs-edu-meta">
+                                <span>2017</span>
+                                <span>58.91%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="cs-edu-card">
+                        <div class="cs-edu-icon" uk-icon="icon: file-edit; ratio: 1.3"></div>
+                        <div>
+                            <h4 class="cs-edu-degree">Secondary School Leaving Certificate (SSLC)</h4>
+                            <p class="cs-edu-school">Government Boys Higher Secondary School, Jalakandapuram</p>
+                            <div class="cs-edu-meta">
+                                <span>2015</span>
+                                <span>78.20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section End -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-text-center reveal">
+                <span class="cs-section-tag">Get In Touch</span>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <h2 class="uk-margin-remove cs-sec-title">Let's Build Something Great</h2>
+            </div>
+            <div class="cs-mt-15 uk-text-center reveal reveal-delay-1">
+                <p class="cs-sec-desc uk-margin-auto">Have a project in mind or an opening on your team? I'd love to
+                    hear from you.</p>
+            </div>
+
+            <div class="cs-mt-50 reveal reveal-delay-2">
+                <div class="cs-contact-card">
+                    <div class="uk-grid uk-grid-large" uk-grid>
+                        <div class="uk-width-2-5@m">
+                            <div class="cs-contact-info">
+                                <a class="uk-text-decoration-none" href="mailto:ranjithplus3344@gmail.com">
+                                    <span class="cs-contact-icon" uk-icon="icon: mail; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Email</small>
+                                        <strong>ranjithplus3344@gmail.com</strong>
+                                    </span>
+                                </a>
+                                <a class="uk-text-decoration-none" href="tel:+919080955852">
+                                    <span class="cs-contact-icon" uk-icon="icon: receiver; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Phone</small>
+                                        <strong>+91 90809 55852</strong>
+                                    </span>
+                                </a>
+                                <div>
+                                    <span class="cs-contact-icon" uk-icon="icon: location; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Location</small>
+                                        <strong>Salem, Tamil Nadu, India</strong>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cs-social-row">
+                                <a href="https://github.com/rohitranjith" target="_blank" rel="noopener"
+                                    aria-label="GitHub" uk-icon="icon: github"></a>
+                                <a href="https://linkedin.com/in/rohit-ranjith" target="_blank" rel="noopener"
+                                    aria-label="LinkedIn" uk-icon="icon: linkedin"></a>
+                                <a href="https://dribbble.com/rohitranjith" target="_blank" rel="noopener"
+                                    aria-label="Dribbble" uk-icon="icon: dribbble"></a>
+                            </div>
+                        </div>
+                        <div class="uk-width-3-5@m">
+                            <div class="cs-contact-form-wrap">
+                                <form id="cs-contact-form">
+                                    <div class="uk-grid uk-grid-small" uk-grid>
+                                        <div class="uk-width-1-2@s">
+                                            <div class="cs-form-field">
+                                                <label for="cs-name">Name</label>
+                                                <input type="text" id="cs-name" placeholder="Your name" required>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@s">
+                                            <div class="cs-form-field">
+                                                <label for="cs-email">Email</label>
+                                                <input type="email" id="cs-email" placeholder="you@email.com" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cs-form-field uk-margin-top">
+                                        <label for="cs-message">Message</label>
+                                        <textarea id="cs-message" rows="4" placeholder="Tell me about your project"
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="cs-btn-accent">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+
+    <section id="footer">
+        <div class="cs-footer-bg uk-padding uk-text-center">
+            <div class="uk-container">
+                <div class="cs-footer-links cs-mb-15">
+                    <a href="#banner">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="uk-margin-remove cs-footer-text">© <span id="cs-year">2026</span> Ranjithkumar K —
+                    Front-End Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section End -->
+
+    <!-- <div id="cs-back-to-top" uk-icon="icon: chevron-up; ratio: 1.2"></div> -->
+
+    <script src="contents/js/main.js"></script>
+
+</body>
+
+</html>

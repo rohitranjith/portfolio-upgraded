@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --primary-color: #06161f;
+    --secondary-color: #000;
+    --default-color: #fff;
+    --light-color: #353941;
+    --footer-color: #909dac;
+    --background-light: #90919C0D;
+    --background-pink: #fff9f5;
+    --background-footer: #000a1f;
+    --heading-fonts: "Outfit", serif;
+    --body-fonts: "Urbanist", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-fonts) !important;
+    color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-fonts) !important;
+}
+
+.cs-text-default {
+    color: var(--default-color) !important;
+}
+
+.cs-text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.cs-fw-500 {
+    font-weight: 500;
+}
+
+.cs-fw-600 {
+    font-weight: 600;
+}
+
+.cs-mt-tiny {
+    margin-top: 5px !important;
+}
+
+.cs-mb-tiny {
+    margin-bottom: 5px !important;
+}
+
+.cs-ml-tiny {
+    margin-left: 5px !important;
+}
+
+.cs-mr-tiny {
+    margin-right: 5px !important;
+}
+
+.cs-mt-15 {
+    margin-top: 15px;
+}
+
+.cs-mb-15 {
+    margin-bottom: 15px;
+}
+
+.cs-mt-30 {
+    margin-top: 30px;
+}
+
+.cs-mb-30 {
+    margin-bottom: 30px;
+}
+
+.cs-mt-50 {
+    margin-top: 50px;
+}
+
+.cs-mb-50 {
+    margin-bottom: 50px;
+}
+
+.cs-pt-50 {
+    padding-top: 50px !important;
+}
+
+.cs-pb-50 {
+    padding-bottom: 50px;
+}
+
+.cs-pad-20 {
+    padding: 20px !important;
+}
+
+.uk-button-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--default-color) !important;
+    border-radius: 60px !important;
+    font-family: var(--body-fonts) !important;
+    padding: 20px 50px !important;
+    font-size: 20px !important;
+    line-height: normal !important;
+    text-transform: initial !important;
+    letter-spacing: .4px;
+}
+
+.uk-button-default {
+    border: 2px solid #06161f !important;
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+    border-radius: 8px !important;
+    font-family: var(--body-fonts) !important;
+    padding: 11px 22px !important;
+    font-size: 16px !important;
+    line-height: normal !important;
+    text-transform: capitalize !important;
+    letter-spacing: .4px;
+    font-weight: 500 !important;
+}
+
+.uk-button-text {
+    color: var(--primary-color) !important;
+    font-family: var(--body-fonts) !important;
+    font-size: 16px !important;
+    line-height: normal !important;
+    text-transform: capitalize !important;
+    letter-spacing: .4px;
+    font-weight: 500 !important;
+}
+
+.cs-banner-title {
+    font-size: 5.8rem;
+    line-height: 5.8rem;
+    color: var(--secondary-color);
+}
+
+.cs-ban-subtitle {
+    font-size: 22px;
+}
+
+.cs-sec-title {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    color: var(--secondary-color);
+}
+
+.cs-sec-sub-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.cs-sec-card-title {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.uk-card {
+    border-radius: 24px !important;
+    padding: 8px;
+}
+
+.cs-trucate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cs-background-light {
+    background-color: var(--background-light);
+}
+
+/* Banner */
+
+.cs-logo {
+    max-width: 160px;
+}
+
+.cs-nav {
+    border-bottom: 1px solid #0000001a;
+    background-color: #fff !important;
+}
+
+.cs-navbar-nav li a:not(.uk-button-primary) {
+    font-family: var(--body-fonts) !important;
+    text-transform: capitalize !important;
+    font-size: 20px !important;
+    min-height: 65px !important;
+    font-weight: 500 !important;
+    letter-spacing: .4px;
+    color: #000 !important;
+}
+
+.cs-mobile-nav li {
+    margin-bottom: 10px;
+}
+
+.cs-mobile-nav li a {
+    font-family: var(--body-fonts) !important;
+    text-transform: capitalize !important;
+    font-size: 20px !important;
+    min-height: 65px !important;
+    font-weight: 500 !important;
+    letter-spacing: .4px;
+    color: #000 !important;
+}
+
+.uk-navbar-left .cs-navbar-nav li a {
+    min-height: initial !important;
+}
+
+.cs-navbar-nav li {
+    position: relative;
+}
+
+.cs-navbar-nav li.uk-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+}
+
+/* Banner end */
+
+/* Footer Section */
+
+.cs-footer-title,
+.cs-footer-subtitle {
+    font-size: 4rem;
+    line-height: 4.8rem;
+}
+
+.cs-footer-subtitle {
+    color: #B6BCC6;
+}
+
+.cs-footer-bg {
+    background-color: var(--background-footer);
+}
+
+.cs-footer-text {
+    color: var(--footer-color);
+}
+
+/* Footer Section End */
+
+@media(max-width:1199px) {
+    .cs-banner-title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+
+@media(max-width:959px) {
+    .cs-banner-title {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+    }
+
+    .cs-sec-title {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    .cs-sec-sub-title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .cs-nav {
+        padding: 12px 0px;
+    }
+
+    .cs-footer-title,
+    .cs-footer-subtitle {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+}
+
+@media(max-width:639px) {
+    .cs-banner-title {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    .cs-sec-title {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .cs-sec-sub-title {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    .cs-ser-card-title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .cs-ban-subtitle {
+        font-size: 20px;
+    }
+
+    .cs-footer-title,
+    .cs-footer-subtitle {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+
+}

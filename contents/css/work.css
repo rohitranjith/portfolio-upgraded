@@ -1,0 +1,69 @@
+.cs-banner-title.cs-work-title span::before {
+    top: 56% !important;
+    border-bottom: calc(.2px + .02em) solid #e5e5e5 !important;
+}
+
+/* Step */
+
+.cs-stpe-bg-bd {
+    border-radius: 15px;
+}
+
+.cs-step-yelw-bg {
+    background-color: #fefbef;
+}
+
+.cs-step-vio-bg {
+    background-color: #f8f6fd;
+}
+
+.cs-step-gre-bg {
+    background-color: #f4fef6;
+}
+
+.cs-step-orng-bg {
+    background-color: #fef2ef;
+}
+
+.cs-stpe-badge-yelw {
+    background-color: #fadd69;
+}
+
+.cs-stpe-badge-vio {
+    background-color: #b89ef5;
+}
+
+.cs-stpe-badge-gre {
+    background-color: #a6f4cb;
+}
+
+.cs-stpe-badge-orng {
+    background-color: #f8baab;
+}
+
+.cs-stpe-badge {
+    border-radius: 20px;
+    padding: 4px 18px;
+}
+
+.cs-step-card {
+    border-radius: 15px;
+}
+
+.cs-stpe-card-img {
+    height: 425px;
+}
+
+.cs-stpe-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cs-step-dotnav li a {
+    border: none !important;
+    background-color: #e7e7e7;
+}
+
+/* Step End */

@@ -1,0 +1,149 @@
+/* Banner Section */
+
+.cs-ban-name {
+    font-size: 20px;
+}
+
+/* Banner Section end */
+
+/* Services Section */
+
+
+.platform-services {
+    width: 100%;
+    height: 325px;
+}
+
+.platform-services img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 4px solid #fbca4d;
+}
+
+.cs-service {
+    margin-top: -175px;
+}
+
+.cs-text-card {
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .1);
+    background: #fff;
+}
+
+.cs-card-title {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+.cs-icon-color {
+    width: 60px;
+    height: 60px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbca4d !important;
+    margin-left: auto !important;
+    border-radius: 5px 5px 0px 0px !important;
+}
+
+.cs-hidden-text .cs-icon-color {
+    margin-left: inherit !important;
+}
+
+.cs-icon-color svg {
+    color: #000;
+}
+
+.cs-hidden-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    padding: 20px;
+    height: 0;
+}
+
+.cs-show-text:hover .cs-hidden-text {
+    opacity: 1;
+    transform: scale(1);
+    height: 315px;
+}
+
+.cs-hidden-text::before {
+    background-color: #0e0f11;
+    border-bottom: 4px solid #fbca4d;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.cs-card-pos {
+    width: 94%;
+    position: absolute;
+    bottom: -8%;
+}
+
+
+/* Services Section End */
+
+/* Our Works Section */
+
+.cs-our-works-img img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    transition: all 0.4s;
+}
+
+.cs-arrow-img {
+    border: 1px solid #dcdcdc;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cs-our-works-img::before {
+    background-color: hsla(0, 0%, 100%, .3);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 0;
+    margin: auto;
+    transition: all 0.4s;
+}
+
+.cs-show-wrks-img:hover .cs-our-works-img::before {
+    width: 100%;
+}
+
+.cs-show-wrks-img:hover .cs-our-works-img img {
+    transform: scale(1.1);
+}
+
+/* Our Works Section End */
+
+
+@media(max-width:959px) {}
+
+@media(max-width:639px) {
+    .cs-our-works-img img {
+        height: 350px;
+    }
+
+    .cs-arrow-img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media(max-width:425px) {}
