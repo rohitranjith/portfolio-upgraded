@@ -757,6 +757,15 @@
     margin: 0;
 }
 
+.cs-project-modal .cs-pro-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cs-project-modal a{
+    color: #000 !important;
+}
+
 /* ---------- Education / Certifications ---------- */
 .cs-edu-card {
     background: #fff;
