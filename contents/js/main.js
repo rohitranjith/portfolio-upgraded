@@ -59,30 +59,6 @@
         });
     }
 
-    /* Contact form (front-end only demo handler) */
-    var form = document.getElementById("cs-contact-form");
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            var btn = form.querySelector("button[type=submit]");
-            var originalText = btn.textContent;
-            btn.textContent = "Message Sent!";
-            btn.disabled = true;
-            var name = form.querySelector("#cs-name").value.trim();
-            var email = form.querySelector("#cs-email").value.trim();
-            var message = form.querySelector("#cs-message").value.trim();
-            var mailto = "mailto:ranjithplus3344@gmail.com?subject=" +
-                encodeURIComponent("Portfolio enquiry from " + (name || "Website Visitor")) +
-                "&body=" + encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")");
-            setTimeout(function () {
-                window.location.href = mailto;
-                btn.textContent = originalText;
-                btn.disabled = false;
-                form.reset();
-            }, 700);
-        });
-    }
-
     /* Current year in footer */
     var yearEl = document.getElementById("cs-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
