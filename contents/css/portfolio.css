@@ -762,8 +762,13 @@
     font-weight: 600;
 }
 
-.cs-project-modal a{
+.cs-project-modal a {
     color: #000 !important;
+}
+
+#modal-sections .uk-modal-body {
+    overflow: auto;
+    max-height: 600px;
 }
 
 /* ---------- Education / Certifications ---------- */
@@ -976,6 +981,33 @@
     box-shadow: 0 12px 30px rgba(251, 202, 77, 0.35);
 }
 
+.cs-form-field {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.cs-form-field input,
+.cs-form-field textarea {
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+.cs-form-field.cs-error input,
+.cs-form-field.cs-error textarea {
+    border-color: #e02424;
+}
+
+.cs-error-msg {
+    color: #e02424;
+    font-size: 13px;
+    margin: 4px 0 0;
+    display: none;
+}
+
+.cs-form-field.cs-error .cs-error-msg {
+    display: block;
+}
+
 /* ---------- Footer ---------- */
 .cs-footer-links {
     display: flex;
@@ -1074,5 +1106,9 @@
 
     .cs-contact-form-wrap {
         padding: 22px;
+    }
+
+    #modal-sections .uk-modal-body {
+        max-height: 300px;
     }
 }

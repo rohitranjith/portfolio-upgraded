@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,8 @@
     <!-- UIkit JS -->
     <script src="contents/plugins/uikit/uikit-min.js"></script>
     <script src="contents/plugins/uikit/uikit-icon-min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -657,7 +659,7 @@
     <!-- Contact Section -->
 
     <section id="contact" class="uk-padding-large uk-padding-remove-horizontal">
-        <div class="uk-container uk-container-small">
+        <div class="uk-container uk-container-large">
             <div class="uk-text-center reveal">
                 <span class="cs-section-tag">Get In Touch</span>
             </div>
@@ -671,66 +673,83 @@
 
             <div class="cs-mt-50 reveal reveal-delay-2">
                 <div class="cs-contact-card">
-                    <div>
-                        <div class="cs-contact-info">
-                            <a class="uk-text-decoration-none" href="mailto:ranjithplus3344@gmail.com">
-                                <span class="cs-contact-icon" uk-icon="icon: mail; ratio: 1.2"></span>
-                                <span>
-                                    <small>Email</small>
-                                    <strong>ranjithplus3344@gmail.com</strong>
-                                </span>
-                            </a>
-                            <a class="uk-text-decoration-none" href="tel:+919080955852">
-                                <span class="cs-contact-icon" uk-icon="icon: receiver; ratio: 1.2"></span>
-                                <span>
-                                    <small>Phone</small>
-                                    <strong>+91 90809 55852</strong>
-                                </span>
-                            </a>
-                            <div>
-                                <span class="cs-contact-icon" uk-icon="icon: location; ratio: 1.2"></span>
-                                <span>
-                                    <small>Location</small>
-                                    <strong>Salem, Tamil Nadu, India</strong>
-                                </span>
+                    <div class="uk-grid uk-flex-middle" uk-grid>
+                        <div class="uk-width-2-5@m">
+                            <div class="cs-contact-info">
+                                <a class="uk-text-decoration-none" href="mailto:ranjithplus3344@gmail.com">
+                                    <span class="cs-contact-icon" uk-icon="icon: mail; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Email</small>
+                                        <strong>ranjithplus3344@gmail.com</strong>
+                                    </span>
+                                </a>
+                                <a class="uk-text-decoration-none" href="tel:+919080955852">
+                                    <span class="cs-contact-icon" uk-icon="icon: receiver; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Phone</small>
+                                        <strong>+91 90809 55852</strong>
+                                    </span>
+                                </a>
+                                <div>
+                                    <span class="cs-contact-icon" uk-icon="icon: location; ratio: 1.2"></span>
+                                    <span>
+                                        <small>Location</small>
+                                        <strong>Salem, Tamil Nadu, India</strong>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="cs-social-row">
+                                <a href="https://github.com/rohitranjith" target="_blank" rel="noopener"
+                                    aria-label="GitHub" uk-icon="icon: github"></a>
+                                <a href="https://linkedin.com/in/rohit-ranjith" target="_blank" rel="noopener"
+                                    aria-label="LinkedIn" uk-icon="icon: linkedin"></a>
+                                <a href="https://dribbble.com/rohitranjith" target="_blank" rel="noopener"
+                                    aria-label="Dribbble" uk-icon="icon: dribbble"></a>
                             </div>
                         </div>
-                        <div class="cs-social-row">
-                            <a href="https://github.com/rohitranjith" target="_blank" rel="noopener" aria-label="GitHub"
-                                uk-icon="icon: github"></a>
-                            <a href="https://linkedin.com/in/rohit-ranjith" target="_blank" rel="noopener"
-                                aria-label="LinkedIn" uk-icon="icon: linkedin"></a>
-                            <a href="https://dribbble.com/rohitranjith" target="_blank" rel="noopener"
-                                aria-label="Dribbble" uk-icon="icon: dribbble"></a>
-                        </div>
-                    </div>
-                    <div class="uk-grid uk-grid-large" uk-grid>
-                        <!-- <div class="uk-width-3-5@m">
+                        <div class="uk-width-3-5@m">
                             <div class="cs-contact-form-wrap">
-                                <form id="cs-contact-form">
+                                <form id="cs-contact-form" novalidate>
+
                                     <div class="uk-grid uk-grid-small" uk-grid>
+
                                         <div class="uk-width-1-2@s">
-                                            <div class="cs-form-field">
+                                            <div class="cs-form-field" id="cs-name-field">
                                                 <label for="cs-name">Name</label>
-                                                <input type="text" id="cs-name" placeholder="Your name" required>
+                                                <input type="text" id="cs-name" name="name" placeholder="Your name">
+                                                <p class="cs-error-msg">Please enter your name.</p>
                                             </div>
                                         </div>
+
                                         <div class="uk-width-1-2@s">
-                                            <div class="cs-form-field">
+                                            <div class="cs-form-field" id="cs-email-field">
                                                 <label for="cs-email">Email</label>
-                                                <input type="email" id="cs-email" placeholder="you@email.com" required>
+                                                <input type="email" id="cs-email" name="email"
+                                                    placeholder="you@email.com">
+                                                <p class="cs-error-msg">Please enter a valid email address.</p>
                                             </div>
                                         </div>
+
                                     </div>
-                                    <div class="cs-form-field uk-margin-top">
+
+                                    <div class="cs-form-field uk-margin-top" id="cs-message-field">
                                         <label for="cs-message">Message</label>
-                                        <textarea id="cs-message" rows="4" placeholder="Tell me about your project"
-                                            required></textarea>
+                                        <textarea id="cs-message" name="message" rows="4"
+                                            placeholder="Tell me about your project"></textarea>
+                                        <p class="cs-error-msg">Please enter a message (at least 10 characters).</p>
                                     </div>
-                                    <button type="submit" class="cs-btn-accent">Send Message</button>
+
+                                    <button type="submit" class="cs-btn-accent" id="cs-submit-btn"
+                                        style="margin-top:14px;">
+                                        Send Message
+                                    </button>
+
+                                    <!-- Status message shown after submit -->
+                                    <p id="cs-form-status" style="margin-top:10px;"></p>
+
                                 </form>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -763,7 +782,7 @@
     <!-- Modal Box -->
 
     <div id="modal-sections" uk-modal>
-        <div class="uk-modal-dialog uk-width-2-3">
+        <div class="uk-modal-dialog uk-width-2-3@m">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <div class="uk-modal-header">
                 <h2 class="uk-modal-title">CMS Projects</h2>
@@ -809,6 +828,9 @@
                             <div class="uk-margin-small-top">
                                 <a target="_blank"
                                     href="https://glenellensolarfarm.globalpower-generation.com.au/">glenellensolarfarm.com.au</a>
+                            </div>
+                            <div class="uk-margin-small-top">
+                                <a target="_blank" href="https://dreamdecorz.in/">dreamdecorz.in</a>
                             </div>
                         </div>
                         <div>
@@ -858,6 +880,98 @@
     <!-- <div id="cs-back-to-top" uk-icon="icon: chevron-up; ratio: 1.2"></div> -->
 
     <script src="contents/js/main.js"></script>
+
+    <script>
+        // Initialize EmailJS with your Public Key
+        emailjs.init("u5zgGskq88PDsZXrA");
+
+        const form = document.getElementById("cs-contact-form");
+        const statusEl = document.getElementById("cs-form-status");
+        const submitBtn = document.getElementById("cs-submit-btn");
+
+        const nameInput = document.getElementById("cs-name");
+        const emailInput = document.getElementById("cs-email");
+        const messageInput = document.getElementById("cs-message");
+
+        const nameField = document.getElementById("cs-name-field");
+        const emailField = document.getElementById("cs-email-field");
+        const messageField = document.getElementById("cs-message-field");
+
+        function isValidEmail(value) {
+            // simple, reliable pattern for standard email formats
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+        }
+
+        function validateForm() {
+            let isValid = true;
+
+            // Name check
+            if (nameInput.value.trim().length === 0) {
+                nameField.classList.add("cs-error");
+                isValid = false;
+            } else {
+                nameField.classList.remove("cs-error");
+            }
+
+            // Email check
+            if (!isValidEmail(emailInput.value.trim())) {
+                emailField.classList.add("cs-error");
+                isValid = false;
+            } else {
+                emailField.classList.remove("cs-error");
+            }
+
+            // Message check (at least 10 characters)
+            if (messageInput.value.trim().length < 10) {
+                messageField.classList.add("cs-error");
+                isValid = false;
+            } else {
+                messageField.classList.remove("cs-error");
+            }
+
+            return isValid;
+        }
+
+        // Clear individual field error as the user types
+        [nameInput, emailInput, messageInput].forEach((input) => {
+            input.addEventListener("input", validateForm);
+        });
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            statusEl.textContent = "";
+
+            if (!validateForm()) {
+                statusEl.style.color = "#e02424";
+                statusEl.textContent = "Please fix the highlighted fields.";
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+
+            emailjs.sendForm(
+                "service_y52r9ne",
+                "template_qh2ktue",
+                form
+            ).then(
+                function () {
+                    statusEl.style.color = "green";
+                    statusEl.textContent = "Message sent successfully!";
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Send Message";
+                },
+                function (error) {
+                    statusEl.style.color = "#e02424";
+                    statusEl.textContent = "Failed to send message. Please try again.";
+                    console.error("EmailJS error:", error);
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Send Message";
+                }
+            );
+        });
+    </script>
 
 </body>
 
