@@ -768,7 +768,7 @@
 
 #modal-sections .uk-modal-body {
     overflow: auto;
-    max-height: 600px;
+    max-height: 650px;
 }
 
 /* ---------- Education / Certifications ---------- */
@@ -1106,5 +1106,9 @@
 
     .cs-contact-form-wrap {
         padding: 22px;
+    }
+
+    .cs-about-photo {
+        height: 300px;
     }
 }
